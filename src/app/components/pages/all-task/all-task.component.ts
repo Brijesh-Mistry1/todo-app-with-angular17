@@ -57,4 +57,12 @@ export class AllTaskComponent {
     task.important=true;
     this.httpService.updateTask(task).subscribe(()=> {})
   }
+
+  onImComplete(task:any){
+    task.completed=false;
+  }
+
+  onNotImportant(task:any){
+    task.important=false;
+  }
 }

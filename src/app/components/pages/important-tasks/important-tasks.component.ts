@@ -55,4 +55,16 @@ export class ImportantTasksComponent {
     task.important=true;
     this.httpService.updateTask(task).subscribe(()=> {})
   }
+
+  onImComplete(task:any){
+    task.completed=false;
+    this.httpService.updateTask(task).subscribe(()=> {})
+    this.ngOnInit();
+  }
+
+  onNotImportant(task:any){
+    task.important=false;
+    this.httpService.updateTask(task).subscribe(()=> {})
+    this.ngOnInit();
+  }
 }

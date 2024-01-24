@@ -12,6 +12,7 @@
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   class="w-6 h-6 text-yellow-600"
+                  (click)="markNotImportant(task)"
                 >
                   <path
                     fill-rule="evenodd"
@@ -42,6 +43,7 @@
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   class="w-6 h-6 text-green-700"
+                  (click)="markImComplete(task)"
                 >
                   <path
                     fill-rule="evenodd"

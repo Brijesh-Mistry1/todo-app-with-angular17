@@ -1,0 +1,58 @@
+-------------------------------
+To-Do App Angular Project
+-------------------------------
+	npm install -g json-server
+	
+start JSON server :
+	json-server --watch db.json
+
+Running the Angular project :
+    ng serve
+
+
+This Project is sourced from : https://www.youtube.com/watch?v=3XlLIREd73o&t=817s
+The completed project with all the assignments provided in the video.
+
+
+=> Below Instructions are for learning purpose :
+----------------------------------------
+		Angular
+----------------------------------------
+
+Installation useful link : 
+	https://tecadmin.net/how-to-install-angular-cli-on-ubuntu-20-04/
+	https://medium.com/@vishal.sharma./installing-angular-cli-on-ubuntu-318622006720
+
+For checking the installed version :
+	ng version
+	ng --version
+
+For creating the angular application :
+	ng new <project-name> --no-standalone
+	cd <project-name>
+	ng serve
+	
+	-> It will run the aplication on URL : http://localhost:4200/
+
+	-> Default application running port is 4200, but you can change port by following command:
+	ng serve --port 4201
+	ng serve --host 0.0.0.0 --port 8080
+	
+
+For creating a component :
+	cd <project-name>
+	ng generate component <component-name>   OR ng g c <comoponent-name>
+	
+	-> This will create necessary files for new component inside the 'src/app/<your-component-name>' directory.
+
+
+For creating service :
+	ng generate service <service-name>
+	
+	-> This command generates necessary files for a new service inside the 'src/app' directory.
+
+For creating Interceptor :
+	ng g interceptor <interceptor-name>
+	
+	-> It is a middleware-like mechanism that you can use to intercept and modify requests-responses globally.
+	- They are not related to providing business logic or managing state but more focused on handling HTTP-related concerns.
